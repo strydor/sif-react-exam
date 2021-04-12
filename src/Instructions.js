@@ -40,11 +40,6 @@ const Instructions = ({ location: { pathname } }) => {
           use the synchronous API.
         </p>
         <p>
-          In a real-world scenario, updates and deletions would also be handled
-          via an API but to limit the scope of this exercise we do not require
-          these operations be handled via the API module. Instead, mutations can
-          be handled within your application state without worry of persisting
-          these changes via an API.
         </p>
       </section>
       <section>
@@ -60,50 +55,24 @@ const Instructions = ({ location: { pathname } }) => {
         </p>
         <ol>
           <li>
-            Filter by Status
+            Create a frame collection
             <ul>
               <li>
-                User can filter the table by status and the table will display
-                the filtered results
+                Order players by height descending
               </li>
               <li>
-                Filter options include: All, Approved, Pending, and Denied
+                Start from the center, succeeding players will alternate between rightmost and leftmost position (infographic is available in Wireframe for a visual reference)
               </li>
             </ul>
           </li>
           <li>
-            Results should be ordered in the display by the "updated_at" field
-            in descending order (so the newest is first)
-          </li>
-          <li>
-            Date fields ("updated_at", "created_at") should be displayed in UTC
-            time in the format of "%Y-%m-%d" with the following definitions:
+            Each frame block will represent the player
             <ul>
-              <li>%Y - Four-digit year with century (2018, e.g.)</li>
-              <li>%m - two-digit month (12, 04, etc…)</li>
-              <li>%d - two-digit day (20, 05, etc…)</li>
+              <li>Display full name, height and image</li>
             </ul>
           </li>
           <li>
-            Edit Status
-            <ul>
-              <li>
-                User may click on the Status in the table and change the
-                underlying request record's status
-              </li>
-              <li>
-                If status is changed, the “updated_at” field should change to
-                the current time
-              </li>
-            </ul>
-          </li>
-          <li>
-            Delete Record
-            <ul>
-              <li>
-                User may click on the Delete link and delete the request record
-              </li>
-            </ul>
+            Base the number of rows and number of players per row from the `row_reference` key returned via Api.js
           </li>
         </ol>
       </section>
