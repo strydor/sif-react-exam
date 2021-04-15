@@ -9,7 +9,7 @@ export const getRequestsSync = () => {
 
 export const getRequests = (data) =>
   new Promise((resolve, reject) => {
-    let data = includeRefData(team_data);
+    let data = includeRefData(mockRequests);
     setTimeout(() => resolve(data), 2000);
   });
 
