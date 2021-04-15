@@ -10,7 +10,7 @@ const Instructions = ({ location: { pathname } }) => {
       <section>
         <h2>Getting Started</h2>
         <p>Fork this CodeSandbox to get started.</p>
-        <a href="https://codesandbox.io/s/ovonylqp69">
+        <a href="https://codesandbox.io/s/github/strydor/sif-react-exam">
           <img
             alt="Edit React Developer Test"
             src="https://codesandbox.io/static/img/play-codesandbox.svg"
