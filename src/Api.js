@@ -7,7 +7,7 @@ export const getRequestsSync = () => {
   return includeRefData(mockRequests);
 };
 
-export const getRequests = (data) =>
+export const getRequests = () =>
   new Promise((resolve, reject) => {
     let data = includeRefData(mockRequests);
     setTimeout(() => resolve(data), 2000);
