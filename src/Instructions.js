@@ -9,35 +9,38 @@ const Instructions = ({ location: { pathname } }) => {
     <div style={{ width: "90%", margin: "auto" }}>
       <section>
         <h2>Getting Started</h2>
-        <p>Fork this CodeSandbox to get started.</p>
-        <a href="https://codesandbox.io/s/github/strydor/sif-react-exam">
-          <img
-            alt="Edit React Developer Test"
-            src="https://codesandbox.io/static/img/play-codesandbox.svg"
-          />
-        </a>
+        <p>Please Fork this sandbox to create your own (This will happen automatically when you start making edits). 
+          On completion of your test, send your unique Fork (URL) back to us within the alloted time.</p>
+        <h3>Overview</h3>
+        <p>
+          You have been provided a random number of players which are part of a Team Photo. We need to construct that Team Photo, based on the data provided in the API request (see below).
+          Players are ordered by Height, and the number of players per row is determined based on the row_reference lookup provided in the API. The number of players, and therefore the number of rows will differ on every refresh.
+          </p>
 
+        <div className="wireframe">
+          <img
+            className="wireframe"
+            alt="Edit React Developer Test"
+            src="https://sif-web-assets-au.s3.ap-southeast-2.amazonaws.com/sandbox/2Eyy892.jpg"
+          />
+          </div>
+        
         <p>
           A <strong>Requests</strong> component has been created for you as a
-          starting place. Feel free to create additional files or use external
-          libraries (not jQuery) as needed to simplify the task. However, ensure
-          that all logic around sorting, updating, and removing records is
-          handled in your own code. You should not need to modify any of the
+          starting place. Feel free to create additional files to componentize your solution. However, ensure
+          that all logic around sorting records is handled in your own code. You should not need to modify any of the
           other existing files.
         </p>
       </section>
       <section>
         <h2>Getting Request Data</h2>
         <p>
-          We have provided an API module for getting request data into your
-          application. There are two functions exported from the API module for
+          There are two functions exported from the API module for
           fetching requests. The first, "getRequests", returns a promise;
           whereas the second, "getRequestsSync", synchronously returns an array
           of requests. It is preferred to use the async version since it more
           closesly resembles a real-world scenario but handling async operations
-          in React adds some complexity. If you are new to React or are having
-          difficulty implementing your solution with the async version, you can
-          use the synchronous API.
+          in React adds some complexity. 
         </p>
         <p>
         </p>
@@ -45,30 +48,26 @@ const Instructions = ({ location: { pathname } }) => {
       <section>
         <h2>Requirements</h2>
         <p>
-          Please take the provided <Link to="/wireframe">wireframe</Link> and
-          implement the functionality using{" "}
-          <a target="_blank" href="https://reactjs.org/docs/hello-world.html">
-            ReactJS
-          </a>
-          . If any requirements are unclear, note your questions in the code
+          Please take the sample output and replicate based on your data set. For a larger view, see <Link to="/wireframe">wireframe</Link>.
+          If any requirements are unclear, note your questions in the code
           comments, but make an assumption and proceed.
         </p>
         <ol>
           <li>
-            Create a frame collection
+            Create a Team Photo Frame Collection
             <ul>
               <li>
-                Order players by height descending
+                Order players by <i>height</i> descending
               </li>
               <li>
-                Start from the center, succeeding players will alternate between rightmost and leftmost position (infographic is available in Wireframe for a visual reference)
+                Start from the center of each ROW, and add succeeding players to the rightmost and leftmost position alternating.
               </li>
             </ul>
           </li>
           <li>
-            Each frame block will represent the player
+            For each player, please display
             <ul>
-              <li>Display full name, height and image</li>
+              <li>full name</li><li>Height</li> <li>Image</li>
             </ul>
           </li>
           <li>
