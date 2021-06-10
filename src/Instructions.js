@@ -48,19 +48,21 @@ const Instructions = ({ location: { pathname } }) => {
       <section>
         <h2>Requirements</h2>
         <p>
-          Please take the sample output and replicate based on your data set. For a larger view, see <Link to="/wireframe">wireframe</Link>.
-          If any requirements are unclear, note your questions in the code
-          comments, but make an assumption and proceed.
+          Please take the sample output and replicate based on your data set. For an example of how this should be done, <Link to="/wireframe">please see this example.</Link>
+          If any requirements are unclear, you are free to make an assumption and proceed, but please advice on submission of anything that was not clear, and decisions you made based on your understanding.
         </p>
         <ol>
           <li>
             Create a Team Photo Frame Collection
             <ul>
               <li>
-                Order players by <i>height</i> descending
+                Order all players by <i>height</i> descending, so the tallest player is Top Row Middle, to shortest player, Bottom Row Ottermost Seat. <Link to="/wireframe">(see example)</Link>.
               </li>
               <li>
-                Start from the center of each ROW, and add succeeding players to the rightmost and leftmost position alternating.
+                Start from the center of each ROW, and add succeeding players to the left and right most positions alternating until the row is full.
+              </li>
+              <li>
+                Ensure each row has the right number of players based on the player count supplied in the row_reference object.
               </li>
             </ul>
           </li>
