@@ -2,7 +2,7 @@ import React from "react";
 
 const Wireframe = () => (
   <div className="wireframe">
-    <img src="https://i.imgur.com/2Eyy892.jpg" />
+    <img src="http://flashworks-web-files.s3.amazonaws.com/sandbox-test/EXAMPLE_FC.jpg" />
   </div>
 );
 
