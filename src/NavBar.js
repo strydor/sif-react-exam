@@ -12,7 +12,7 @@ const NavBar = () => (
       Instructions
     </NavLink>
     <NavLink activeClassName="NavBar__active-item" to="/wireframe" exact>
-      Wireframe
+      Example
     </NavLink>
   </div>
 );
